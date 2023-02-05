@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_package = "org.example";
+option java_multiple_files = true;
+
+package example;
+
+service SolvingPuzzle{
+  rpc solvePuzzle(SendPuzzleRequest)  returns (SendSolutionResponse);
+}
+
+message SendPuzzleRequest{
+  string puzzle = 1 ;
+}
+
+message SendSolutionResponse{
+  string solution = 1;
+}
+
