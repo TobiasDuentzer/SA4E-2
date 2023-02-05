@@ -1,4 +1,5 @@
 Aufgabe 2.1
+
 main.java started das Programm 
 Nach dem Start wird auf eine Konsoleneingabe gewartet.
 Wenn "1" eingegben wird, wechselt der Output zu der File "output.txt".
