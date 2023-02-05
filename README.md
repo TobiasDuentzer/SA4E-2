@@ -33,8 +33,11 @@ Deshalb kann sich die Anwendung nicht mit dem gRPC Server verbinden. Dennoch hab
 
 Ich habe den gRPC Schritt mit manueller Eingabe uebersprungen um zu testen ob der Rest der Anwendung funktioniert, welches der Fall ist.
 
-MtoGRoute.java ist der erste Teil der Aufgabe, indem von einem MQTT-Server das Raetsel empfangen wird, zu einem String gekuerzt und an den gRPC-Server weitergeleitet wird.
+MtoGRoute.java ist der erste Teil der Aufgabe, indem von einem MQTT-Server das Raetsel empfangen wird, zu einem String gekuerzt und an den gRPC-Server weitergeleitet wird. Der String setzt sich aus der raetsel_id und dem Raetsel zusammen: "raetsel_id v1,v2,v3,v4,v5,v6,v7,v8,v9"
+Dies ist die Form, welche mein Puzzelsolver benoetigt.
 
-GtoMRoute.java ist der zweite Teil, indem die Lösung von dem gRPC-Server empfangen wird, mittels Prozess erweitert und in zurück json umgewandelt wird.
+GtoMRoute.java ist der zweite Teil, indem die Loesung von dem gRPC-Server empfangen wird, mittels Prozess erweitert und in zurück json umgewandelt wird.
+Empfangen wird der String: "raetsel_id v1,v2,v3 v4,v5,v6 v7,v8,v9 time"
+Dieser wird gesplitted und zu gewollter json umgewandelt und ergaenzt.
 
-MtoMRoute.java ist der vollständige Prozess indem von MQTT über gRCP zurück zu MQTT gesendet wird.
+MtoMRoute.java ist der vollstaendige Prozess indem von MQTT über gRCP zurück zu MQTT gesendet wird.
