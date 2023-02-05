@@ -28,7 +28,7 @@ Vorab, ich konnte ein Problem nicht Lösen:
 
 Caused by: java.lang.IllegalArgumentException: gRPC service class not found: org.example.SolvingPuzzleGrpc
 
-Deshalb kann sich die Anwendung nicht mit dem gRPC Server verbinden. Dennoch hab ich den Code soweit wie möglich versucht zu schreiben.
+Deshalb kann sich die Anwendung nicht mit dem gRPC Server verbinden. Dennoch hab ich den Code soweit wie möglich versucht zu schreiben. Ich habe ebenfalls die services.proto hinzu gefuegt, inder der Service definiert ist.
 
 Ich habe den gRPC Schritt mit manueller Eingabe uebersprungen um zu testen ob der Rest der Anwendung funktioniert, welches der Fall ist.
 
