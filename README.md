@@ -20,6 +20,7 @@ Nachdem der Output ausgewählt wurde, startet der PuzzleSolver.java und versucht
 Dabei wird jeder Test ausgegeben solange bis eine korrekte Loesung gefunden wurde.
 
 
+
 Aufgabe 2.2
 
 CamelApplication.java startet die Anwendung.
