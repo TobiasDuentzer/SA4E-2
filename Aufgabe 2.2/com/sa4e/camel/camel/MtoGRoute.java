@@ -18,8 +18,9 @@ public class MtoGRoute extends RouteBuilder {
                     public void process(Exchange exchange){
                         String payload = exchange.getMessage().getBody(String.class);
                         String[] pay = payload.split("\"");
-                        pay[6] = pay[6].replace(":","").replace(",","");
-                        String payP = pay[6]+ " "
+                        String[] t = pay[6].split(",");
+                        t[0] = t[0].replace(":","").replace(" ","");
+                        String payP = t[0]+ " "
                                 + pay[9]+ ","
                                 + pay[11]+ ","
                                 + pay[13]+ ","
