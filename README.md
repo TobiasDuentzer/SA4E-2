@@ -41,5 +41,6 @@ Empfangen wird der String: "raetsel_id v1,v2,v3 v4,v5,v6 v7,v8,v9 time"
 Dieser wird gesplitted und zu gewollter json umgewandelt und ergaenzt.
 
 MtoMRoute.java ist der vollstaendige Prozess indem von MQTT ueber gRCP zurueck zu MQTT gesendet wird.
+
 Vollstaendige Projekte:
 https://drive.google.com/drive/folders/1H09yUW_e9gVTwloPeJi789w5TrNjXDRH?usp=sharing
